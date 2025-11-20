@@ -3,9 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Handige Linux commands</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <nav>
+        <a href="#file-and-folder">Bestands- en mapbeheer</a>
+        <a href="#install">Pakketten installeren</a>
+        <a href="#look-and-edit">Bestanden bekijken & bewerken</a>
+        <a href="#permissions">Superuser & rechten</a>
+        <a href="#network">Netwerk</a>
+    </nav>
+    <section id="file-and-folder">
+        <h2>Bestands- en mapbeheer</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Command</th>
+                    <th>Uitleg</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ls</td>
+                    <td>Toon bestanden in een map</td>
+                </tr>
+                <tr>
+                    <td>cd {mapnaam}</td>
+                    <td>Ga naar map</td>
+                </tr>
+                <tr>
+                    <td>cd ..</td>
+                    <td>Ga een map omhoog</td>
+                </tr>
+                <tr>
+                    <td>cd</td>
+                    <td>Ga naar home map</td>
+                </tr>
+                <tr>
+                    <td>pwd</td>
+                    <td>Toon huidige locatie</td>
+                </tr>
+                <tr>
+                    <td>mkdir {mapnaam}</td>
+                    <td>Maak een nieuwe map</td>
+                </tr>
+                <tr>
+                    <td>rm {bestandsnaam}</td>
+                    <td>Verwijder bestand</td>
+                </tr>
+                <tr>
+                    <td>cp {bron} {doel}</td>
+                    <td>Kopieer bestand</td>
+                </tr>
+                <tr>
+                    <td>mv {bron} {doel}</td>
+                    <td>Verplaats of hernoem bestand</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="install">
+        <h2>Pakketten installeren</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>command</th>
+                    <th>Uitleg</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sudo apt update</td>
+                    <td>Update Ubuntu</td>
+                </tr>
+                <tr>
+                    <td>sudo apt install {pakketnaam}</td>
+                    <td>Installeer pakket</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="look-and-edit">
+        <h2>Bekijken & bewerken van bestanden</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Command</th>
+                    <th>Uitleg</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>cat {bestandsnaam}</td>
+                    <td>Toon de inhoud van bestand</td>
+                </tr>
+                <tr>
+                    <td>less {bestandsnaam}</td>
+                    <td>Toon de inhoud van bestand 1 pagina per keer, zonder hem te openen</td>
+                </tr>
+                <tr>
+                    <td>nano {bestandsnaam}</td>
+                    <td>Edit bestand</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="permissions">
+        <h2>Superuser & rechten</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Command</th>
+                    <th>Uitleg</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>sudo {command}</td>
+                    <td>Voer commando uit als admin</td>
+                </tr>
+                <tr>
+                    <td>chmod 755 {bestandsnaam}</td>
+                    <td>Verander rechten van bestand</td>
+                </tr>
+                <tr>
+                    <td>chown {user} {bestandsnaam}</td>
+                    <td>Verander eigenaar van bestand</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <secion id="network">
+        <h2>Netwerk</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Command</th>
+                    <th>Uitleg</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ip a</td>
+                    <td>Toon netwerkinterfaces</td>
+                </tr>
+                <tr>
+                    <td>ping {adres}</td>
+                    <td>Test bereikbaarheid adres</td>
+                </tr>
+            </tbody>
+        </table>
+    </secion>
 </body>
 </html>
