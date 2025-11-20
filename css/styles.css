@@ -16,3 +16,7 @@ h2 {
 section {
     padding-left: 1vw;
 }
+
+nav {
+    display: flex;
+}
