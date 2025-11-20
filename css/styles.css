@@ -20,4 +20,7 @@ section {
 nav {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 90vw;
+    padding-left: 1vw;
 }
